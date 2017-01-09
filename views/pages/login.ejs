@@ -1,0 +1,22 @@
+<% include ../partials/head %>
+<body>
+<% include ../partials/header %>
+<div class="col-lg-12">
+    <% if(errors) {%>
+    <div class="alert alert-danger">
+        <ul>
+          <%errors.forEach(function(i){%>
+                <li><%= i.msg %></li>
+                <% })%>
+        </ul>
+    </div>
+<% }%>
+</div>
+	<div id="root">
+    </div>
+<p class="footer">
+  Created by <a href="#">Hai9999</a>
+</p>
+  <script type="text/babel" src="js/login.js"></script>
+</body>
+</html>

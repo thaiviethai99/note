@@ -1,0 +1,59 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left" id="menuLeft">
+      <li class="active"><a href="home">Home</a></li>
+      <li><a href="showNote">Note</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <%if (session.username) { %>
+          <ul class="dropdown-menu dropdown-user">
+                        <li><a href="api/userInfo"><i class="fa fa-gear fa-fw"></i> User Info</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                        <a href="../logout">
+                            <i class="fa fa-sign-out fa-fw"></i> Logout
+                        </a>
+                        </li>
+                    </ul>
+                    <% } else {%>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="../login"><i class="fa fa-user fa-fw"></i> Login</a>
+                        </li>
+                        <li><a href="../register"><i class="fa fa-gear fa-fw"></i> Register</a>
+                        </li>
+                    </ul>
+                    <% }%>
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<script>
+  $(function() {
+     var pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("/")+1);
+  $('#menuLeft').find('li').removeClass("active");
+     $('#menuLeft').find('li a').each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).parent().addClass("active");
+     })
+});
+</script>
