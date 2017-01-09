@@ -22,3 +22,7 @@
 ## Demo
 
 [heroku](https://note999.herokuapp.com/)
+
+## Hướng phát triển tương lai :
+
+1.Viết code website sử dụng webpack và react-redux
