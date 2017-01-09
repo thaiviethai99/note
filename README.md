@@ -18,6 +18,7 @@
 1. Thêm,xóa,sửa ghi chú
 2. Chia sẻ ghi chú
 3. Like ghi chú
+4. Chat với admin ngoài trang chủ : sử dụng tài khoản hai9999,pass:123 để đăng nhập với quyền admin
 
 ## Demo
 
@@ -26,3 +27,4 @@
 ## Hướng phát triển tương lai :
 
 1.Viết code website sử dụng webpack và react-redux
+2.Viết code cho trang admin
