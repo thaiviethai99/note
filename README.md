@@ -3,6 +3,14 @@
 
 1. Clone project sau đó chạy lệnh npm install
 2. Import database trong thư mục database
+3. Chạy với lệnh : node index
+
+## Bước tiếp theo:
+
+1. Tạo tài khoản : http://localhost:3000/register hay đăng nhập : http://localhost:3000/login
+2. Tạo note : http://localhost:3000/showNote
+3. Share note : vào link http://localhost:3000/api/userInfo click vào link ở Share Note để get link chia sẽ. 
+
 
 ## Tính năng :
 
