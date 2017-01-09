@@ -26,5 +26,6 @@
 
 ## Hướng phát triển tương lai :
 
-1.Viết code website sử dụng webpack và react-redux
-2.Viết code cho trang admin
+1. Viết code website sử dụng webpack và react-redux
+
+2. Viết code cho trang admin
